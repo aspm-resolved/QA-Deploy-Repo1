@@ -1,0 +1,20 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: QA Test
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    steps:
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: QA-env
+          artifact-id: 4a8985b0-404d-42cf-a626-d3787f6e3dae
+          target-environment: test-qa
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: QA-env
+          artifact-id: 4a8985b0-404d-42cf-a626-d3787f6e3dae
+          target-environment: QA
