@@ -11,15 +11,15 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: QA-env1
-          artifact-id: ab578e82-ebfb-4ade-958b-0dd1462dafa7
+          artifact-id: 63835548-369e-4101-a212-3b64f865bcda
           target-environment: test-qa
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: QA-env2
-          artifact-id: 4c46260e-a553-417b-934d-19fa226b3554
+          artifact-id: 63835548-369e-4101-a212-3b64f865bcda
           target-environment: QA
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: QA-env3
-          artifact-id: 4c46260e-a553-417b-934d-19fa226b3554
+          artifact-id: 63835548-369e-4101-a212-3b64f865bcda
           target-environment: QA-V2
